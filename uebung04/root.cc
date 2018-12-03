@@ -50,9 +50,17 @@ void test_root(double q, int n, int steps) {
 
 int main(int argc, char** argv) {
 
-    test_root(2003002347, 2, 100);
-    test_root(5023002847, 7, 100);
-    test_root(9003402307, 1, 100);
+    std::cout << std::endl;
+    test_root(1234567890, 1, 100);
+    std::cout << std::endl;
+    test_root(1234567890, 2, 100);
+    std::cout << std::endl;
+    test_root(1234567890, 6, 100);
+    std::cout << std::endl;
+    test_root(1234567890, 7, 100);
+    std::cout << std::endl;
+    test_root(1234567890, 7, 110);
+    std::cout << std::endl;
 
     return(0);
 
