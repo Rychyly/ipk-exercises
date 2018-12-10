@@ -1,7 +1,6 @@
 double mean(const std::vector<double>& v) {
     if (v.empty()) {
         throw std::invalid_argument("Leerer Vektor");
-        return(0);
     }
     double sum = 0;
     for (int i = 0; i < v.size(); i++) {
@@ -13,9 +12,8 @@ double mean(const std::vector<double>& v) {
 double median(const std::vector<double>& v) {
     if (v.empty()) {
         throw std::invalid_argument("Leerer Vektor");
-        return(0);
     }
-//    std::sort(v.begin(), v.end());
+//    std::sort(v.begin(), v.end());  // Needs a newer C++ standard!
     if (v.size() % 2 == 0) {
         return((v[v.size()/2 - 1] + v[v.size()/2])/2);
     } else {
